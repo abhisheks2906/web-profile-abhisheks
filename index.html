@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modern.css">
+    <link rel="stylesheet" href="bento.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+    <div class="bg-blob blob-3"></div>
+    <div class="bg-blob blob-4"></div>
+    <div class="noise-overlay"></div>
+    <div class="scroll-progress"></div>
+    <div class="custom-cursor"></div>
+
+    <div class="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">A<span>B</span>.</a>
+
+            <nav class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#portfolio" class="nav-link">Project</a>
+                <a href="#hobbies" class="nav-link">Hobbies</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="hamburger" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="home" class="hero section">
+            <div class="container hero-container">
+
+                <div class="hero-image gsap-hero-img">
+                    <!-- <div class="glow-bg"></div> -->
+                    <div class="image-wrapper"></div>
+                </div>
+
+                <div class="hero-content">
+                    <h2 class="gsap-hero">Hello, I'm</h2>
+                    <h1 class="gsap-hero">Abhishek Singh</h1>
+                    <h3 class="gsap-hero">And I'm a <span class="typing-text"></span><span class="cursor">|</span></h3>
+                    <div class="hero-buttons gsap-hero">
+                        <a href="#contact" class="btn btn-primary">Hire Me</a>
+                        <a href="#portfolio" class="btn btn-outline">View Work</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="about" class="about section">
+            <div class="container fade-up">
+                <h2 class="section-title">About <span>Me</span></h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>I am a passionate creative specializing in modern web technologies, artificial intelligence
+                            integration, and high-performance freelance projects. I build digital experiences that
+                            seamlessly bridge the gap between design and engineering.</p>
+                    </div>
+
+                    <div class="about-stats">
+                        <div class="stat-box">
+                            <h3><span class="counter" data-target="3">0</span>+</h3>
+                            <p>Programming Languages</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3><span class="counter" data-target="10">0</span>+</h3>
+                            <p>Dashboard Completed</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3><span class="counter" data-target="5">0</span>+</h3>
+                            <p>Software Knowlwdge</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3><span class="counter" data-target="5">0</span>+</h3>
+                            <p>Front-End Project</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills section">
+            <div class="container fade-up">
+                <h2 class="section-title">My <span>Skills</span></h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="circle-wrap">
+                            <svg viewBox="0 0 100 100">
+                                <circle class="bg" cx="50" cy="50" r="45"></circle>
+                                <circle class="progress" cx="50" cy="50" r="45" data-percent="90"></circle>
+                            </svg>
+                            <div class="percent"><span class="counter" data-target="90">0</span>%</div>
+                        </div>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="circle-wrap">
+                            <svg viewBox="0 0 100 100">
+                                <circle class="bg" cx="50" cy="50" r="45"></circle>
+                                <circle class="progress" cx="50" cy="50" r="45" data-percent="75"></circle>
+                            </svg>
+                            <div class="percent"><span class="counter" data-target="75">0</span>%</div>
+                        </div>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="circle-wrap">
+                            <svg viewBox="0 0 100 100">
+                                <circle class="bg" cx="50" cy="50" r="45"></circle>
+                                <circle class="progress" cx="50" cy="50" r="45" data-percent="85"></circle>
+                            </svg>
+                            <div class="percent"><span class="counter" data-target="85">0</span>%</div>
+                        </div>
+                        <h3>UI/UX</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="circle-wrap">
+                            <svg viewBox="0 0 100 100">
+                                <circle class="bg" cx="50" cy="50" r="45"></circle>
+                                <circle class="progress" cx="50" cy="50" r="45" data-percent="70"></circle>
+                            </svg>
+                            <div class="percent"><span class="counter" data-target="70">0</span>%</div>
+                        </div>
+                        <h3>AI Tools</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="education section">
+            <div class="container fade-up">
+                <h2 class="section-title">My <span>Education</span></h2>
+                <div class="timeline">
+                    <div class="timeline-line"></div>
+
+                    <div class="timeline-item left timeline-anim">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>B.Tech in Computer Science</h3>
+                            <span class="timeline-date">2020 - 2024</span>
+                            <p>Technocrats Institute of Technology -Advance</p>
+                            <p>Bhopal, Madhya Pradesh</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right timeline-anim">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Higher Secondary (12th)</h3>
+                            <span class="timeline-date">2019 - 2020</span>
+                            <p>Saraswati Shishu Mandir Higher Secondary School</p>
+                            <p>Sirmaur, Rewa, Madhya Pradesh</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item left timeline-anim">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>High School (10th)</h3>
+                            <span class="timeline-date">2017 - 2018</span>
+                            <p>Model Higher Secondary School Sitlaha</p>
+                            <p>Jawa, Rewa, Madhya Pradesh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio section">
+            <div class="container fade-up">
+                <h2 class="section-title">My <span>Projects</span></h2>
+
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web Dev</button>
+                    <button class="filter-btn" data-filter="ai">AI / ML</button>
+                    <button class="filter-btn" data-filter="ui">UI/UX</button>
+                </div>
+
+                <div class="portfolio-grid">
+                    <div class="portfolio-card tilt-card" data-category="web">
+                        <div class="card-img"
+                            style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=600&auto=format&fit=crop');"
+                            loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <h3>E-Commerce Platform</h3>
+                            <p>Full-stack solution with real-time inventory.</p>
+                            <a href="#" class="btn btn-sm">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card tilt-card" data-category="web">
+                        <div class="card-img"
+                            style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=600&auto=format&fit=crop');"
+                            loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <h3>E-Commerce Platform</h3>
+                            <p>Full-stack solution with real-time inventory.</p>
+                            <a href="#" class="btn btn-sm">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card tilt-card" data-category="web">
+                        <div class="card-img"
+                            style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=600&auto=format&fit=crop');"
+                            loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <h3>E-Commerce Platform</h3>
+                            <p>Full-stack solution with real-time inventory.</p>
+                            <a href="#" class="btn btn-sm">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card tilt-card" data-category="ai">
+                        <div class="card-img"
+                            style="background-image: url('https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=600&auto=format&fit=crop');"
+                            loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <h3>AI Data Dashboard</h3>
+                            <p>Interactive visualization of ML models.</p>
+                            <a href="#" class="btn btn-sm">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card tilt-card" data-category="ui">
+                        <div class="card-img"
+                            style="background-image: url('https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=600&auto=format&fit=crop');"
+                            loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <h3>Corporate UI Kit</h3>
+                            <p>Modern design system and interface.</p>
+                            <a href="#" class="btn btn-sm">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hobbies" class="hobbies section">
+            <div class="container">
+                <h2 class="section-title fade-up">My <span>Hobbies</span></h2>
+
+                <div class="bento-grid">
+                    <div class="bento-item bento-wide bento-img bento-anim"
+                        style="background-image: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=600&auto=format&fit=crop');">
+                        <i class="fas fa-camera"></i>
+                        <h3>Photography</h3>
+                        <p>Capturing street life and nature.</p>
+                    </div>
+
+                    <div class="bento-item bento-anim">
+                        <i class="fas fa-headphones-alt"></i>
+                        <h3>Music</h3>
+                        <div class="music-wave">
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+
+                    <div class="bento-item bento-tall bento-anim">
+                        <i class="fas fa-plane-departure"></i>
+                        <h3>Traveling</h3>
+                        <p>Exploring new cultures and places.</p>
+                        <i class="fas fa-globe-americas bg-icon"></i>
+                    </div>
+
+                    <div class="bento-item bento-anim">
+                        <i class="fas fa-gamepad"></i>
+                        <h3>Gaming</h3>
+                        <p>Strategy & RPGs.</p>
+                    </div>
+
+                    <div class="bento-item bento-wide bento-anim">
+                        <i class="fas fa-book-open"></i>
+                        <h3>Reading</h3>
+                        <p>"A reader lives a thousand lives before he dies."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section">
+            <div class="container fade-up">
+                <h2 class="section-title">Contact <span>Me</span></h2>
+
+                <div class="contact-layout">
+                    <div class="contact-info-wrapper gsap-contact-left">
+                        <h3>Let's work together!</h3>
+                        <p>I'm currently available for freelance projects and full-time opportunities. Drop me a line
+                            and let's build something awesome.</p>
+
+                        <div class="contact-details">
+
+                            <div class="detail-item">
+                                <i class="fas fa-phone"></i>
+                                <span><a href="tel:+918305585957" class="info-link">+91 8305585957</a></span>
+                            </div>
+
+                            <div class="detail-item">
+                                <i class="fab fa-whatsapp"></i>
+                                <span><a href="https://wa.me/918305585957" target="_blank" class="info-link">Chat on
+                                        WhatsApp</a></span>
+                            </div>
+
+                            <div class="detail-item">
+                                <i class="fas fa-envelope"></i>
+                                <span><a href="mailto:abhimanyu15020702@gmail.com"
+                                        class="info-link">abhimanyu15020702@gmail.com</a></span>
+                            </div>
+
+                            <div class="detail-item">
+                                <i class="fab fa-github"></i>
+                                <span><a href="https://github.com/aapka-username" target="_blank"
+                                        class="info-link">GitHub</a></span>
+                            </div>
+
+                            <div class="detail-item">
+                                <i class="fab fa-linkedin-in"></i>
+                                <span><a href="https://www.linkedin.com/in/yourusername" target="_blank"
+                                        class="info-link">LinkedIn</a></span>
+                            </div>
+
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span><a href="https://www.google.com/maps/search/?api=1&query=Bhopal,+Madhya+Pradesh"
+                                        target="_blank" class="info-link">Bhopal, Madhya Pradesh</a></span>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <!-- <a href="#" class="social-btn" aria-label="GitHub"><i class="fab fa-github"></i></a> -->
+                            <!-- <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a> -->
+                            <!-- <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a> -->
+                            <!-- <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a> -->
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper gsap-contact-right">
+                        <form id="contact-form" class="advanced-form">
+                            <!-- Name Input -->
+                            <div class="input-group">
+                                <input type="text" id="name" required autocomplete="off">
+                                <label for="name">Your Name</label>
+                            </div>
+                            <!-- Mobile Input -->
+                            <div class="input-group">
+                                <input type="tel" id="mobile" class="magic-input" autocomplete="off" pattern="[0-9]{10}"
+                                    maxlength="14" value="+91 "
+                                    oninput="let digits = this.value.replace(/\D/g, ''); if (digits.startsWith('91')) {digits = digits.substring(2);} this.value = '+91 ' + digits.substring(0, 10);"
+                                    required>
+                                <label for="mobile">Your Mobile Number</label>
+                            </div>
+                            <!-- Email Input -->
+                            <div class="input-group">
+                                <input type="email" id="email" required autocomplete="off">
+                                <label for="email">Your Email</label>
+                            </div>
+                            <!-- Message Input -->
+                            <div class="input-group">
+                                <textarea id="message" rows="5" required autocomplete="off"></textarea>
+                                <label for="message">Your Message</label>
+                            </div>
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-primary submit-btn">
+                                <span class="btn-text">Send Message</span>
+                                <i class="fas fa-paper-plane btn-icon"></i>
+                            </button>
+
+                            <p class="form-status"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;
+            <script>document.write(new Date().getFullYear());</script> Abhishek Singh. All Rights Reserved.
+        </p>
+    </footer>
+
+    <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+    <script src="modern.js"></script>
+
+</body>
+
+</html>

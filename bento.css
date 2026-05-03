@@ -1,0 +1,150 @@
+/* =========================================
+   Hobbies Section (Bento Box Grid)
+   ========================================= */
+.bento-grid {
+    display: grid;
+    /* 4 columns ka grid banega */
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 200px;
+    /* Har box ki default height */
+    gap: 1.5rem;
+}
+
+.bento-item {
+    /* background-color: var(--surface-color); */
+    border-radius: 20px;
+    /* Thode zyada gol kinare premium look ke liye */
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease, border-color 0.4s ease;
+}
+
+.bento-item:hover {
+    transform: scale(1.03);
+    /* Hover karne par thoda aage aayega */
+    border-color: var(--primary-color);
+}
+
+.bento-item h3 {
+    margin: 10px 0 5px;
+    z-index: 2;
+}
+
+.bento-item p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    z-index: 2;
+}
+
+.bento-item i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    z-index: 2;
+}
+
+/* Grid Shape Classes (Asymmetric Layout ka Magic) */
+.bento-wide {
+    grid-column: span 2;
+}
+
+/* Ye box 2 column ki jagah lega */
+.bento-tall {
+    grid-row: span 2;
+}
+
+/* Ye box 2 row ki jagah lega (lamba) */
+
+/* Photography Image Setting */
+.bento-img {
+    background-size: cover;
+    background-position: center;
+    border: none;
+}
+
+.bento-img h3,
+.bento-img p {
+    color: #ffffff;
+}
+
+.bento-img i {
+    color: #ffffff;
+}
+
+/* Traveling Background Icon */
+.bg-icon {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    font-size: 8rem !important;
+    opacity: 0.05;
+    /* Bohot light watermark jaisa dikhega */
+    z-index: 1 !important;
+}
+
+/* Music Equalizer Animation */
+.music-wave {
+    display: flex;
+    gap: 5px;
+    margin-top: 15px;
+    height: 30px;
+    align-items: flex-end;
+    z-index: 2;
+}
+
+.music-wave span {
+    width: 6px;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+    animation: bounce 1s infinite alternate;
+}
+
+.music-wave span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.music-wave span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.music-wave span:nth-child(4) {
+    animation-delay: 0.1s;
+}
+
+@keyframes bounce {
+    0% {
+        height: 5px;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+/* --- Mobile Responsiveness (Bento Grid) --- */
+@media (max-width: 900px) {
+    .bento-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Tablet pe 2 column */
+}
+
+@media (max-width: 600px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+        /* Mobile pe single column */
+        grid-auto-rows: minmax(150px, auto);
+    }
+
+    .bento-wide,
+    .bento-tall {
+        grid-column: span 1;
+        /* Mobile pe normal size */
+        grid-row: span 1;
+    }
+}
