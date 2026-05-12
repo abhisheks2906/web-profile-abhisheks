@@ -375,12 +375,7 @@
                             </div>
                             <!-- Mobile Input -->
                             <div class="input-group">
-                                <input type="tel" id="mobile" class="magic-input" autocomplete="off" pattern="[0-9]{10}"
-                maxlength="14" value="+91 "
-                onfocus="this.classList.add('show-text'); setTimeout(() => this.setSelectionRange(this.value.length, this.value.length), 0);"
-                onblur="if(this.value.length > 4) { this.classList.add('show-text'); } else { this.classList.remove('show-text'); }"
-                oninput="let digits = this.value.replace(/\D/g, ''); if (digits.startsWith('91')) {digits = digits.substring(2);} this.value = '+91 ' + digits.substring(0, 10);"
-                required>
+                                <input type="tel" id="mobile" class="magic-input" autocomplete="off" pattern="\+91 [0-9]{10}" maxlength="14" value="+91 " onfocus="this.classList.add('show-text'); setTimeout(() => this.setSelectionRange(this.value.length, this.value.length), 0);" onblur="if(this.value.length > 4) { this.classList.add('show-text'); } else { this.classList.remove('show-text'); }" oninput="let digits = this.value.replace(/\D/g, ''); if (digits.startsWith('91')) {digits = digits.substring(2);} this.value = '+91 ' + digits.substring(0, 10);" required>
                                 <label for="mobile">Your Mobile Number</label>
                             </div>
                             <!-- City Input -->
