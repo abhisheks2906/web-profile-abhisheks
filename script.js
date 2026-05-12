@@ -274,7 +274,9 @@ document.addEventListener("DOMContentLoaded", () => {
             e.preventDefault();
 
             const name = document.getElementById("name").value.trim();
+            const city = document.getElementById("city").value.trim();
             const email = document.getElementById("email").value.trim();
+            const mobile = document.getElementById("mobile").value.trim();
             const message = document.getElementById("message").value.trim();
 
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -296,7 +298,9 @@ document.addEventListener("DOMContentLoaded", () => {
             const formData = {
                 access_key: "e612e699-5d97-4f0b-a08b-60a784d77b4a",
                 name: name,
+                city: city,
                 email: email,
+                mobile: mobile,
                 message: message,
                 subject: `New Message from ${name} - Portfolio`
             };
